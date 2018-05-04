@@ -276,7 +276,7 @@ int main()
     
     model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));  // it's a bit too big for our scene, so scale it down
     model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    model = glm::translate(model, glm::vec3(0.0f,0.0f,4.0f)); // translate it down so it's at the center of
+    model = glm::translate(model, glm::vec3(0.0f,0.0f,8.0f)); // translate it down so it's at the center of
 
     modelShader.setMat4("model", model);
     projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
