@@ -32,10 +32,8 @@
 		121A1455209C790200109404 /* shader_m.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader_m.hpp; sourceTree = "<group>"; };
 		121A1456209C790200109404 /* mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
 		121A1457209C790200109404 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
-		121A1458209C790200109404 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		121A1459209C790200109404 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		121A145A209C790200109404 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		121A145B209C790200109404 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		121A145C209C790200109404 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		121A145D209C790200109404 /* drone.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = drone.hpp; sourceTree = "<group>"; };
 		121A145E209C790200109404 /* drone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drone.cpp; sourceTree = "<group>"; };
@@ -84,11 +82,9 @@
 				121A145E209C790200109404 /* drone.cpp */,
 				121A145D209C790200109404 /* drone.hpp */,
 				121A145A209C790200109404 /* glad.c */,
-				121A1458209C790200109404 /* LICENSE */,
 				121A1459209C790200109404 /* main.cpp */,
 				121A1456209C790200109404 /* mesh.hpp */,
 				121A145F209C790200109404 /* model.hpp */,
-				121A145B209C790200109404 /* README.md */,
 				121A145C209C790200109404 /* resources */,
 				121A1455209C790200109404 /* shader_m.hpp */,
 				121A1460209C790300109404 /* stb_image.h */,
