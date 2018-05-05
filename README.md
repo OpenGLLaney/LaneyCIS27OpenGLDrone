@@ -88,6 +88,7 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 <li>Go to <b>Product</b>-><b>Scheme</b>-><b>Edit Scheme</b></li>
 <li>click <b>run</b>-><b>option</b></li>
 <li>check <b>Working directory</b>-><b>Use Customer Directory</b>->select the current directory(where your project exist)</li>
+<li>Replace the const string <b>CURRENTFILEPATH</b> in the <b>main.cpp</b> file with the path you selected.</li>
 
 </ol>
 

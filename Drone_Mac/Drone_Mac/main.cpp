@@ -2,7 +2,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
+#include <string>
 #include "stb_image.h"
 
 #define STB_IMAGE_IMPLEMENTATION
@@ -16,9 +16,11 @@
 #include "model.hpp"
 
 #include <iostream>
-#define CURRENTFILEPATH "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/"
-#define SKYBOX "darkCity"
-#define SKEBOXSUFFIX "jpg"
+
+#define SKYBOX "sky"
+#define SKYBOXSUFFIX ".jpg"
+const string CURRENTFILEPATH = "/Users/fufeidu/Documents/GitHub/LaneyCIS27OpenGLDrone/Drone_Mac/Drone_Mac";
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
@@ -26,6 +28,7 @@ void processInput(GLFWwindow *window);
 unsigned int loadTexture(const char *path);
 unsigned int loadCubemap(vector<std::string> faces);
 
+void setFaces(vector<string>& face);
 // settings
 const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
@@ -44,6 +47,7 @@ int main()
 {
   // glfw: initialize and configure
   // ------------------------------
+  
   glfwInit();
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
   glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -181,27 +185,15 @@ int main()
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
   
-  
-  
- 
-  vector<std::string> faces
-  {
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/right.tga",
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/left.tga",
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/top.tga",
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/bottom.tga",
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/front.tga",
-    "/Users/fufeidu/Desktop/CIS27/OpenGL/OpenGlTutalExample/OpenGlTutalExample/resources/textures/skybox/darkCity/back.tga"
-  };
+  vector<std::string> faces;
+  setFaces(faces);
+
   unsigned int cubemapTexture = loadCubemap(faces);
   
   unsigned int floorTexture = loadTexture("resources/textures/ground/ground1.jpg");
   // shader configuration
   // --------------------
   
-  
-//  shader.use();
-//  shader.setInt("texture1", 0);
   
   skyboxShader.use();
   skyboxShader.setInt("skybox", 0);
@@ -246,7 +238,6 @@ int main()
     model = glm::scale(model, glm::vec3(10.0f, 10.0f, 10.0f));
     
     selfDefinedShader.setMat4("model", model);
-    //?????? should I set view and projection?
     selfDefinedShader.setMat4("projection", projection);
     selfDefinedShader.setMat4("view", view);
     glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -258,9 +249,6 @@ int main()
     model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
     model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     model = glm::translate(model, glm::vec3(-50.0f, 70.0f, -80.0f));
-    
-    
-    
     
     selfDefinedShader.setMat4("model", model);
     selfDefinedShader.setMat4("projection", projection);
@@ -286,10 +274,6 @@ int main()
     
     
 
-    
-    
-    
-    
     
     
     
@@ -472,4 +456,13 @@ unsigned int loadCubemap(vector<std::string> faces)
   glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
   
   return textureID;
+}
+void setFaces(vector<string>& face){
+  string direction[6]={"/right","/left","/top","/bottom","/front","/back"};
+  string temp = CURRENTFILEPATH;
+  for (int i = 0; i<6; i++) {
+    temp.append("/resources/textures/skybox/").append(SKYBOX).append(direction[i]).append(SKYBOXSUFFIX);
+    face.push_back(temp);
+    temp = CURRENTFILEPATH;
+  }
 }
