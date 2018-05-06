@@ -13,6 +13,7 @@
 		121A1468209C792F00109404 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A1467209C792E00109404 /* OpenGL.framework */; };
 		121A146A209C79BC00109404 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A1469209C79BC00109404 /* libglfw.3.2.dylib */; };
 		121A146C209C7A0D00109404 /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A146B209C7A0D00109404 /* libassimp.4.1.0.dylib */; };
+		12767033209E27EA0003D85C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12767031209E27EA0003D85C /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		121A1467209C792E00109404 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		121A1469209C79BC00109404 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		121A146B209C7A0D00109404 /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.1.0.dylib; path = ../../../../../../usr/local/Cellar/assimp/4.1.0/lib/libassimp.4.1.0.dylib; sourceTree = "<group>"; };
+		12767031209E27EA0003D85C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		12767032209E27EA0003D85C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				121A145D209C790200109404 /* drone.hpp */,
 				121A145A209C790200109404 /* glad.c */,
 				121A1459209C790200109404 /* main.cpp */,
+				12767031209E27EA0003D85C /* Game.cpp */,
+				12767032209E27EA0003D85C /* Game.hpp */,
 				121A1456209C790200109404 /* mesh.hpp */,
 				121A145F209C790200109404 /* model.hpp */,
 				121A145C209C790200109404 /* resources */,
@@ -161,6 +166,7 @@
 				121A1462209C790300109404 /* main.cpp in Sources */,
 				121A1464209C790300109404 /* drone.cpp in Sources */,
 				121A1463209C790300109404 /* glad.c in Sources */,
+				12767033209E27EA0003D85C /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

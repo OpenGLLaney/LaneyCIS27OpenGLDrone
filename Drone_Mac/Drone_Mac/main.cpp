@@ -3,9 +3,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <string>
-#include "stb_image.h"
-
 #define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -221,8 +220,6 @@ int main()
     // ------
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
-    
     
      //draw scene as normal
     selfDefinedShader.use();
