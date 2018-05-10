@@ -1,6 +1,6 @@
 # LaneyCIS27OpenGLDrone
 This is a project for Laney CIS 27 Drone project By group 3.<br/>
-The group members are FUFEI TYLER NIKKI and ANDO<br/>
+The group members is currently FUFEI Only, Since my group memeber think it is too hard to handle matrix, projection related things...Please add your name here if you have contribution<br/>
 This project is mainly based on this <a href="https://learnopengl.com/">tutorial</a>.Please make sure you had completed these sections:<br/>
 <a href="https://learnopengl.com/Introduction">Introduction</a><br/>
 <a href=https://learnopengl.com/Getting-started/OpenGL>Getting started</a><br/>
@@ -10,7 +10,7 @@ Many classes such as,Camera/Shader are based on <a href="https://learnopengl.com
 
 # How to Use
 There are 6 libs/header files need to be installed.<br/>
-<ol>
+<ol start=1>
 <li>OpenGL lib</li>
 
 <li>glfw</li>
