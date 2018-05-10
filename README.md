@@ -1,6 +1,6 @@
 # LaneyCIS27OpenGLDrone
 This is a project for Laney CIS 27 Drone project By group 3.<br/>
-The group members are FUFEI TYLER NIKKI and ANDO<br/>
+The group members is currently FUFEI Only, Since my group memeber think it is too hard to handle matrix, projection related things...Please add your name here if you have contribution<br/>
 This project is mainly based on this <a href="https://learnopengl.com/">tutorial</a>.Please make sure you had completed these sections:<br/>
 <a href="https://learnopengl.com/Introduction">Introduction</a><br/>
 <a href=https://learnopengl.com/Getting-started/OpenGL>Getting started</a><br/>
@@ -10,7 +10,7 @@ Many classes such as,Camera/Shader are based on <a href="https://learnopengl.com
 
 # How to Use
 There are 6 libs/header files need to be installed.<br/>
-<ol>
+<ol start=1>
 <li>OpenGL lib</li>
 
 <li>glfw</li>
@@ -26,7 +26,7 @@ For Mac user,you are assumed to use <b>Xcode</b>:<br/>
 Double click the Drone_Mac.xcodeproj to open it.
 <ul>
 <li>OpenGL lib:
-<ol>
+<ol start=1>
 <li>At top left, click <b>the blue project icon </b>with the name Drone_Mac,not the yellow folder.(if the blue project icon doesn't show, click the folder icon under the top left x(exit icon))</li>
 <li>click the <b>Build Phases</b></li>
 <li>click the <b>Link Binary With Libraries</b>(<a href="https://stackoverflow.com/questions/23177550/what-does-it-mean-to-link-against-something">What does link means</a>)</li>
@@ -37,7 +37,7 @@ Double click the Drone_Mac.xcodeproj to open it.
 </ol> </li>
 
 <li>glfw lib: <a herf="https://learnopengl.com/Getting-started/Creating-a-window"> Raw Reference</a>
-<ol>
+<ol start=1>
 <li><a href="https://brew.sh/">Install Brew</a></li>
 <li>Open your terminal(use your paw to scratch the touch pad then go to the <b>other folder</b> if you can not find the terminal)</li>
 <li>In your terminal, type "<b>brew install glfw</b>" without quot</li>
@@ -54,7 +54,7 @@ Double click the Drone_Mac.xcodeproj to open it.
 </li>
 
 <li>assimp
-<ol>
+<ol start=1>
 <li>It is the same as install glfw. Repeat 2-12 in the previous section but replace the <b>glfw</b> with <b>assimp</b>. There is also difference in the path: the number. <br/>
 For example: At step 7: <b>/usr/local/Cellar/glfw/</b> will be <b>/usr/local/Cellar/assimp/</b> <br/>
 At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Cellar/assimp/4.1.0/include</b>
@@ -62,13 +62,13 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 </ol>
 </li>
 <li>glm
-<ol>
+<ol start=1>
 <li>glm is different, it don't have a library file, so you only need a  header file</li>
 <li>repeat 2-3 and 9-12 in glfw section. Make sure to replace the <b>glfw</b> with <b>glm</b></br>
 </ol>
 </li>
 <li>glad
-<ol>
+<ol start=1>
 <li>go to this <a href="http://glad.dav1d.de/">website</a> </li>
 <li><b>In order</b>,select Language: <b>C/C++</b>, Specification:<b>OpenGL</b>, API/gl: <b>the biggest one</b>, profile:<b>Core</b>, then click generate at the bottom.</li>
 <li>Click the zip file shown.A few second later, unzip the folder you download,replace the <b>glad.c</b> file in the xcode project with your <b>src/glad.c</b> file(right click the glad.c file in the xcode, then <b>delete</b>-><b>move to trash</b>, then right click, <b>add file to..</b>, select your glad.c file)</li>
@@ -76,15 +76,16 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 </ol>
 </li>
 <li>stb_image
-<ol>
+<ol start=1>
 <li><a href="https://github.com/nothings/stb/blob/master/stb_image.h">check this</a></li>
 <li>It is already setup in this project,which is the "<b>stb_image.h</b>" file.</li>
 </ol>
 </li>
 </ul>
 
-## Set up enviroment
-<ol>
+## Set up enviroment
+
+<ol start=1>
 <li>Go to <b>Product</b>-><b>Scheme</b>-><b>Edit Scheme</b></li>
 <li>click <b>run</b>-><b>option</b></li>
 <li>check <b>Working directory</b>-><b>Use Customer Directory</b>->select the current directory(where your project exist)</li>
@@ -94,7 +95,7 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 
 # TODO
 
-<ol>
+<ol start=1>
 <li>implement Drone class</li>
 <li>add auto navagation feature</li>
 <li>add walls</li>
