@@ -83,7 +83,7 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 </li>
 </ul>
 
-## Set up enviroment
+## Set up enviroment
 
 <ol start=1>
 <li>Go to <b>Product</b>-><b>Scheme</b>-><b>Edit Scheme</b></li>
