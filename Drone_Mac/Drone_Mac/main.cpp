@@ -3,9 +3,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <string>
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 
+#include "stb_image.h"
+#define STB_IMAGE_IMPLEMENTATION
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -16,8 +16,8 @@
 
 #include <iostream>
 
-#define SKYBOX "sky"
-#define SKYBOXSUFFIX ".jpg"
+#define SKYBOX "darkCity"
+#define SKYBOXSUFFIX ".tga"
 const string CURRENTFILEPATH = "/Users/fufeidu/Documents/GitHub/LaneyCIS27OpenGLDrone/Drone_Mac/Drone_Mac";
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
