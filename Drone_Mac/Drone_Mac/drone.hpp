@@ -9,6 +9,17 @@
 #ifndef drone_hpp
 #define drone_hpp
 
-#include <stdio.h>
+#include <glad/glad.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
+#include <vector>
+class Drone{
+public:
+  Drone(){}
+private:
+  
+  
+};
 
 #endif /* drone_hpp */

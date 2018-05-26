@@ -103,6 +103,7 @@ At step 12: <b>/usr/local/Cellar/glfw/3.2.1/include</b> will be <b>/usr/local/Ce
 <li>implement collison detection</li>
 <li>implement AI based on monte carlo, collect the information when auto navagate</li>
 <li>implement a console show the Infomation when auto navagation</li>
+<li>Add sound</li>
 </ol>
 
 
